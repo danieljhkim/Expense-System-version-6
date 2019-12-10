@@ -1,0 +1,26 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+</head>
+<body>
+	<div>
+        <h4>Approve or deny Reimbursements</h4>
+         <script>
+          var refr = function(){
+              var srcweb=('approveReim.html?t=' + Math.random())
+              document.write("<iframe src=" + srcweb  + " style='width:100%; height:240px'></iframe><br>");
+              document.write("<button type='button' onclick='refr()'>Refresh</button>");
+          }
+          refr();
+          </script>
+      </div> 
+</body>
+</html>

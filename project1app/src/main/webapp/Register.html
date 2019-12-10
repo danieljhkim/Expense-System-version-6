@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>project 1</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+<style>
+
+
+* {font-size:13px; color:DarkSlateGray; box-sizing:border-box; font-family:arial}
+body{background:url('techbackground.jpg') bottom no-repeat; background-size:cover;}
+a:hover {color:white; text-decoration:none}
+fieldset {width:320px; padding:20px; margin-top:30px; margin-bottom:30px; border-radius:2px}
+legend {font-size:1.4em; margin:0; padding:2px; border-radius:2px; background-color:rgba(60, 99, 130,1.0); opacity:.9; color:white; letter-spacing:2px;}
+legend span {color:white}
+input {width:160px}
+label {margin-top:15px; margin-bottom:0; padding:0; font-size:14px}
+
+
+#menu {color:white; font-size:20px; display:inline-block; position:absolute; right:3%; margin-top:25px; border:solid white 1px; border-radius:15px; padding:3px}
+#menu:hover {color:teal; cursor:pointer;}
+
+.navdropdown {position:fixed;display:flex; background-color:rgba(44, 62, 80,.8); z-index:10; height:0; justify-content:center; transition:height 1s; -webkit-transition:height 1s;}
+    #menu:hover .navdropdown {height:100%; top:5; right:0; flex-direction:column;}
+    #menu:hover .navdropdown li {display:block}
+    .navdropdown li {display:none; position:relative; padding:20px; margin-bottom:35px}
+    .navdropdown li:hover {background-color:teal}
+    .navdropdown li a {font-size:18px; color:white; }
+
+.logo {display:block; font-family:'Brawler',serif; color:white; border:solid white 1.2px; padding:3px; border-radius:10px; box-shadow: 5px 10px 40px black;}
+    .logo:hover {border:solid teal 1.2px; color:white; transition:.5s}
+
+.sec-form {display:flex; flex-direction:column;align-items:center; justify-content:center; }
+    .sec-form * {color:white}
+    .sec-form form {text-align:center; display:block; margin:auto}
+    .sec-form form fieldset {background-color:rgba(10, 61, 98,1.0); color:white; }
+    .sec-form form:hover fieldset {border:solid teal .5px; transition:1s}
+    .sec-form form:hover legend {border:solid teal .5px;}
+    .sec-form * input {background-color:rgba(19, 15, 64,.5); border:none; color:white}
+    #input_button {background-color:rgba(60, 99, 130,1.0); margin-bottom:15px; margin-top:0; font-size:14px; padding:3px}
+        #input_button:hover{border:solid teal .5px;}
+
+footer{background-color:rgba(44, 58, 71,1.0); display:flex; padding:5vw; align-items:center; justify-content:center; margin-top:2vw}
+
+</style>
+
+
+</head>
+
+<body>
+    <span id='menu'>Menu
+            <div class='navdropdown'>
+                <li><a href='index.html'>Home</a></li>
+                <li><a href='Login.html'> Log-In </a></li>
+            </div>
+    </span>
+    <div style='padding:7vw'>
+        <section class='sec-form' ><br>
+            <a style='font-size:25px' class='logo' href='index.html'>Chad & Daniel LLC</a>
+            <form method="post" action='Register.do' >
+                <fieldset id='formfieldset'>
+                    <legend>Registration</legend>
+                        <label style='margin-top:10px'>First Name: </label><br>
+                        <input  maxlength='20' type="text" name="firstName" required='required'>
+                        <br>
+                        <label >Last Name: </label><br>
+                        <input  maxlength='20' type="text" name="lastName" required='required'>
+                        <br>
+                        <label>User ID:</label><br>
+                        <input  type="text" name="userName" required='required'>
+                        <br>
+                        <label>Email:</label><br>
+                        <input  type="text" name="email" required='required'>
+                        <br>
+                        <label>Role:</label><br>
+                        <input  type="text" name="role" required='required'>
+                        <br>
+                        <label>Password:</label><br>
+                        <input  type="password" name="password" required='required'>
+                        <br><br>
+                        <input id='input_button' style='margin-top:5px' type="submit" name="submit" value="Register">
+                </fieldset>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div>
+                <a style='font-size:20px' class='logo' href='index.html'>Chad & Daniel LLC Home</a>   
+                <p>All Rights Reserved</p> 
+        </div>
+    </footer>
+</body>
+</html>
+
+
+
+</body>
+</html>

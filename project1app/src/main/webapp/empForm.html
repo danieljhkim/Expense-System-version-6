@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <style>
+        #apinput{width:250px; height:32px; }
+		label {font-size:14px; margin-top:10px; margin-bottom:2px}
+    </style>
+</head>
+<body>
+
+	<form style='width:100%' action='AddReimbusementRequest.do' method='POST'>
+        <div style='display:flex; flex-direction:column; justify-content:center; align-items:center;width:100% '>
+        
+            <label><b>Description:</b></label>
+            <input class='form-control' id='apinput'  name='description' type='text' placeholder='description'/>
+            
+            <label><b>Amount:</b></label>
+            <input class='form-control' id='apinput'  name='amount' type='text' placeholder='amount'/>
+            
+            <label><b>Type:</b></label>
+             <select class="form-control" id='apinput' name='type'>
+                  <option value ="1">Travel</option>
+                  <option value ="2">Lodging</option>
+                  <option value ="3">Food</option>
+                  <option value ="4">Other</option>
+             </select>
+            <input style='margin-top:13px' class='btn btn-success' id='apinput' type="submit"  value="Submit"/>
+        </div>
+	</form>
+
+</body>
+</html>
